@@ -16384,7 +16384,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;style&gt;.container { width:100% !important; }  &lt;/style&gt;&quot;</span><span class="p">))</span>
@@ -16429,7 +16429,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[60]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -16458,7 +16458,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span> <span class="k">as</span> <span class="n">html_print</span>
@@ -16466,33 +16466,11 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 <span class="k">def</span> <span class="nf">cstr</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;pink&#39;</span><span class="p">):</span>
     <span class="k">return</span> <span class="s2">&quot;&lt;text style=color:</span><span class="si">{}</span><span class="s2">;font-size:167%&gt;</span><span class="si">{}</span><span class="s2">&lt;/text&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">color</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
 
-<span class="n">left</span><span class="p">,</span> <span class="n">word</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span> <span class="s1">&#39;&#39;&#39;Confirmed    [33,362]  &#39;&#39;&#39;</span> <span class="p">,</span> <span class="s1">&#39;&#39;&#39; Recovered   [8,525]  &#39;&#39;&#39;</span> <span class="p">,</span> <span class="s1">&#39;&#39;&#39; Deceased [1,082]  &#39;&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;&#39; Tested [830,201]  &#39;&#39;&#39;</span>
-<span class="n">html_print</span><span class="p">(</span><span class="n">cstr</span><span class="p">(</span><span class="s1">&#39; </span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">cstr</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#28A9FF&#39;</span><span class="p">),</span> <span class="n">cstr</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#00E061&#39;</span><span class="p">),</span> <span class="n">cstr</span><span class="p">(</span><span class="n">right</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">),</span> <span class="n">cstr</span><span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#B1B3BF&#39;</span><span class="p">)]),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">left</span><span class="p">,</span> <span class="n">word</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span><span class="n">active</span><span class="o">=</span> <span class="s1">&#39;&#39;&#39;Confirmed    [33,362]  &#39;&#39;&#39;</span> <span class="p">,</span> <span class="s1">&#39;&#39;&#39; Recovered   [8,525]  &#39;&#39;&#39;</span> <span class="p">,</span> <span class="s1">&#39;&#39;&#39; Deceased [1,082]  &#39;&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;&#39; Tested [830,201]  &#39;&#39;&#39;</span><span class="p">,</span><span class="s2">&quot;Active [23,949]&quot;</span>
+<span class="c1">#html_print(cstr(&quot;\n&quot;.join([cstr(left, color=&#39;#28A9FF&#39;), cstr(word, color=&#39;#00E061&#39;), cstr(right, color=&#39;red&#39;), cstr(test, color=&#39;#B1B3BF&#39;)]), color=&#39;black&#39;) )</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[52]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<text style=color:black;font-size:167%><text style=color:#28A9FF;font-size:167%>Confirmed    [33,362]  </text> 
-<text style=color:#00E061;font-size:167%> Recovered   [8,525]  </text> 
-<text style=color:red;font-size:167%> Deceased [1,082]  </text> 
-<text style=color:#B1B3BF;font-size:167%> Tested [830,201]  </text></text>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -16502,8 +16480,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># embeded flourish link</span>
-<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;div class=&quot;flourish-embed flourish-bar-chart-race&quot; data-src=&quot;visualisation/2155887&quot; data-url=&quot;https://flo.uri.sh/visualisation/2155887/embed&quot;&gt;&lt;script src=&quot;https://public.flourish.studio/resources/embed.js&quot;&gt;&lt;/script&gt;&lt;/div&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">html_print</span><span class="p">(</span><span class="n">cstr</span><span class="p">(</span><span class="n">cstr</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#28A9FF&#39;</span><span class="p">))</span> <span class="p">)</span>
 </pre></div>
 
     </div>
@@ -16521,7 +16498,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/2155887" data-url="https://flo.uri.sh/visualisation/2155887/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<text style=color:pink;font-size:167%><text style=color:#28A9FF;font-size:167%>Confirmed    [33,362]  </text></text>
 </div>
 
 </div>
@@ -16535,6 +16512,167 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">html_print</span><span class="p">(</span><span class="n">cstr</span><span class="p">(</span><span class="n">cstr</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#00E061&#39;</span><span class="p">)</span> <span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[6]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<text style=color:pink;font-size:167%><text style=color:#00E061;font-size:167%> Recovered   [8,525]  </text></text>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">html_print</span><span class="p">(</span><span class="n">cstr</span><span class="p">(</span><span class="n">cstr</span><span class="p">(</span><span class="n">right</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span> <span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<text style=color:pink;font-size:167%><text style=color:red;font-size:167%> Deceased [1,082]  </text></text>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">html_print</span><span class="p">(</span><span class="n">cstr</span><span class="p">(</span><span class="n">cstr</span><span class="p">(</span><span class="n">active</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#B172FF&#39;</span><span class="p">)</span> <span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[8]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<text style=color:pink;font-size:167%><text style=color:#B172FF;font-size:167%>Active [23,949]</text></text>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">html_print</span><span class="p">(</span><span class="n">cstr</span><span class="p">(</span><span class="n">cstr</span><span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#B2B2B2&#39;</span><span class="p">)</span> <span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<text style=color:pink;font-size:167%><text style=color:#B2B2B2;font-size:167%> Tested [830,201]  </text></text>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># embeded flourish link</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;div class=&quot;flourish-embed flourish-bar-chart-race&quot; data-src=&quot;visualisation/2155887&quot; data-url=&quot;https://flo.uri.sh/visualisation/2155887/embed&quot;&gt;&lt;script src=&quot;https://public.flourish.studio/resources/embed.js&quot;&gt;&lt;/script&gt;&lt;/div&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/2155887" data-url="https://flo.uri.sh/visualisation/2155887/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 
@@ -16545,7 +16683,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># fetch dataset</span>
@@ -16559,7 +16697,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># collect columns in variables as array</span>
@@ -16576,7 +16714,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Object oriented</span>
@@ -16589,7 +16727,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># COnfirmed</span>
@@ -16602,7 +16740,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span> <span class="c1"># creates canvas</span>
@@ -16641,7 +16779,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -16673,7 +16811,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Death</span>
@@ -16686,7 +16824,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span> 
@@ -16719,7 +16857,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -16751,7 +16889,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Recovered</span>
@@ -16764,7 +16902,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span> <span class="c1"># creates canvas</span>
@@ -16799,7 +16937,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -16831,7 +16969,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Confirm Death Recovery</span>
@@ -16844,7 +16982,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="mi">11</span><span class="p">))</span> <span class="c1"># creates canvas</span>
@@ -16892,7 +17030,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[56]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -16924,7 +17062,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">###### code by Hardik :)</span>
