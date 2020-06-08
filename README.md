@@ -1,4 +1,4 @@
-### A beginner’s approach to COVID-19 Data Visualization using matplotlib in Python
+# A beginner’s approach to COVID-19 Data Visualization using matplotlib in Python
 
 > Apocalypse takes place when we least expect it to happen.
 
