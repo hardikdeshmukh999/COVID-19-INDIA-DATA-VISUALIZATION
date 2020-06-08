@@ -230,6 +230,8 @@ To see the above graphs ,seaborn and plotly in action (Pyhton code included): [
 
 My GitHub repository : [https://github.com/smarthardik10](https://github.com/smarthardik10)
 
+Check out my other articles such as making a card game using object oriented programming and Simplified explanation of google code jam Problem B qualification round 2020 : https://medium.com/@smarthardik10
+
 ### **Thanks..**
 
 And Stay Safe 😷
